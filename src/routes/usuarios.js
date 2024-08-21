@@ -5,25 +5,25 @@ import authMiddleware from '../middlewares/authMiddleware.js' // Usamos el middl
 // Cambio el codigo de las rutas "app" por "router"
 const router = Router()
 
-// Obtener todos los usuarios
+// OBTENER TODOS LOS USUARIOS
 router.get('/', authMiddleware, getAllUsers) // Usamos el middleware para verificar el token
 
-// Obtener un solo usuario
+// OBTENER UN SOLO USUARIO
 router.get('/:id', authMiddleware, getUser) // Usamos el middleware para verificar el token
 
-// Registro un usuario
+// REFISTRO DE UN USUARIO
 router.post('/register', registerUser)
 
-// Ingreso de un usuario
+// INGRESO DE UN USUARIO
 router.post('/login', loginUser)
 
-// Salida de un usuario
+// SALIDA DE UN USUARIO
 router.post('/logout', logoutUser)
 
-// Actualizar un usuario
+// ACTUALIZAR UN USUARIO
 router.put('/:id', updateUser)
 
-// Eliminar un usuario
+// ELIMINAR UN USUARIO
 router.delete('/:id', deleteUser)
 
 export default router

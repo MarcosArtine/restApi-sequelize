@@ -40,7 +40,7 @@ app.use(cors({ // Puede utilizar solo app.use(cors()) pero esto estableceria tod
   }
 }))
 
-// hago que todas las direcciones de routes esten dentro de usuarios
+// hago que todas las direcciones de routes usuarios esten dentro del path usuarios
 app.use('/usuarios', usuarios)
 
 app.listen(PORT, () => {
