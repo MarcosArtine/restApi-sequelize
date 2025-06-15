@@ -19,3 +19,6 @@ secrets.txt
 
 # Ignorar archivos de registro
 *.log
+
+# Ignorar las variable de entorno
+.env

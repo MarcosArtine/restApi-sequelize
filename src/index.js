@@ -2,6 +2,7 @@ import express from 'express'
 import usuarios from './routes/usuarios.js'
 import { db } from './db/database.js'
 import cors from 'cors' // soluciona los problemas de CORS
+import 'dotenv/config'
 
 const app = express()
 const PORT = process.env.PORT ?? 3000;
